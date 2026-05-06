@@ -1,0 +1,17 @@
+{
+  "repo": "harbor-mesh-shard-pipe",
+  "thresholds": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 184,
+    "watch": 111
+  },
+  "terms": [
+    "quorum health",
+    "lease drift",
+    "replica lag",
+    "membership churn"
+  ]
+}
