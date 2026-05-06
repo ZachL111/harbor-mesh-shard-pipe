@@ -1,0 +1,6 @@
+INSERT INTO domain_review_cases VALUES
+  ('baseline', 'quorum health', 75, 38, 27, 53, 160, 'ship'),
+  ('stress', 'lease drift', 83, 34, 25, 47, 172, 'ship'),
+  ('edge', 'replica lag', 51, 42, 8, 70, 190, 'ship'),
+  ('recovery', 'membership churn', 75, 30, 18, 76, 202, 'ship'),
+  ('stale', 'quorum health', 65, 40, 10, 65, 205, 'ship');

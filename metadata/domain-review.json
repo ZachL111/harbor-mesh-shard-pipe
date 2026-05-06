@@ -1,0 +1,73 @@
+{
+  "repo": "harbor-mesh-shard-pipe",
+  "language": "SQL",
+  "category": "Distributed systems",
+  "goal": "Implement an SQL distributed systems project for shard visual model generation, using layout fixtures and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "quorum health",
+      "lease drift",
+      "replica lag",
+      "membership churn"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "quorum health",
+      "signal": 75,
+      "slack": 38,
+      "drag": 27,
+      "confidence": 53,
+      "score": 160,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "lease drift",
+      "signal": 83,
+      "slack": 34,
+      "drag": 25,
+      "confidence": 47,
+      "score": 172,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "replica lag",
+      "signal": 51,
+      "slack": 42,
+      "drag": 8,
+      "confidence": 70,
+      "score": 190,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "membership churn",
+      "signal": 75,
+      "slack": 30,
+      "drag": 18,
+      "confidence": 76,
+      "score": 202,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "quorum health",
+      "signal": 65,
+      "slack": 40,
+      "drag": 10,
+      "confidence": 65,
+      "score": 205,
+      "lane": "ship"
+    }
+  ]
+}
